@@ -28,7 +28,8 @@ Esse arquivo deve ser utilizado para acessar o formulário para responder a pesq
 
 ## 📹 Instruções em vídeo  
 - Vídeo 1: https://www.loom.com/share/e3d27ef081024fb68e710fa33f086e75  
-- Vídeo 2: https://www.loom.com/share/90569ea0774243fba6658e12dbea3e56  
+- Vídeo 2: https://www.loom.com/share/90569ea0774243fba6658e12dbea3e56
+- Vídeo 3: https://www.loom.com/share/e15f8a3f1da542449a489ea82b1b149f
 
 ---
 
