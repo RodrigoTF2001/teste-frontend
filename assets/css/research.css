@@ -1,0 +1,36 @@
+.custom-star-rating {
+  margin: 20px 0px 20px 0;
+}
+
+.custom-rating {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  /*position: relative;*/
+  margin-bottom: 0px !important;
+}
+.custom-rating-input {
+  float: right;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0 0 0 -1em;
+  opacity: 0;
+  display: none;
+}
+.custom-rating:hover .custom-rating-star:hover,
+.custom-rating:hover .custom-rating-star:hover ~ .custom-rating-star,
+.custom-rating-input:checked ~ .custom-rating-star {
+  background-position: 0 34px;
+}
+
+.custom-rating-star,
+.custom-rating:hover .custom-rating-star {
+  position: relative;
+  float: right;
+  display: block;
+  width: 32px;
+  height: 33px;
+  margin-right: 5px;
+  background: url("../img/estrela-pesquisa.png") 0 0px;
+}

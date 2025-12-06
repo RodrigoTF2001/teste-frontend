@@ -1,4 +1,14 @@
 /* Custom Styles Card Pesquisa */
+.enviar-pesquisa-btn {
+  background-color: #ff2b34;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 44px;
+}
 
 .pesquisa-card {
   background: #f6f6f6;
@@ -160,4 +170,127 @@
   height: 18px;
   border: 1px solid #aaa;
   border-radius: 4px;
+}
+
+/* Form Adicionar Pergunta Inline */
+.form-adicionar-pergunta {
+  display: none;
+
+  margin-top: 20px;
+  animation: slideDown 0.3s ease;
+}
+
+.form-adicionar-pergunta.active {
+  display: block;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-adicionar-pergunta .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-adicionar-pergunta .form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-adicionar-pergunta input[type="text"],
+.form-adicionar-pergunta textarea {
+  padding: 12px 16px;
+  border: 1px solid #cdd1d9;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  font-family: Inter, sans-serif;
+  transition: border-color 0.2s;
+}
+
+.form-adicionar-pergunta input[type="text"]:focus,
+.form-adicionar-pergunta textarea:focus {
+  outline: none;
+  border-color: #4fa0ed;
+}
+
+.form-adicionar-pergunta textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-adicionar-pergunta .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-adicionar-pergunta .checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #ff2b34;
+}
+
+.form-adicionar-pergunta .checkbox-group label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin: 0;
+}
+
+.form-adicionar-pergunta .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.form-adicionar-pergunta .btn-cancelar {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #cdd1d9;
+  background: #fff;
+  color: #414651;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-adicionar-pergunta .btn-cancelar:hover {
+  background: #f9fafb;
+}
+
+.form-adicionar-pergunta .btn-salvar {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #4fa0ed;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-adicionar-pergunta .btn-salvar:hover {
+  background: #3d8fd9;
+}
+
+.__button_adicionar-pergunta.hidden {
+  display: none;
 }
