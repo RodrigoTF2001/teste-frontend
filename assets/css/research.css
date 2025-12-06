@@ -4,6 +4,14 @@
     url("../../adiciona-pergunta/404.html") format("truetype");
 }
 
+.button-event {
+  font-family: Inter !important;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #ff2b34;
+  padding: 10px 25px 10px 25px;
+}
+
 .custom-star-rating {
   margin: 20px 0px 20px 0;
 }

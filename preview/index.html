@@ -80,6 +80,7 @@
       table th {
         background-color: #fff !important;
       }
+
       .clip-icon {
         color: white;
       }
@@ -117,25 +118,38 @@
           style="margin-bottom: 0"
         >
           <div
-            class="ds-column-half"
-            style="display: flex; flex-direction: row; align-items: center"
+            style="
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+            "
           >
-            <h5 style="color: #fff; text-decoration: underline">Visão 360º</h5>
-            <img
-              src="../assets/img/clipboard.svg"
-              width="10"
-              height="10"
-              style="margin-left: 5px"
-              class="clip-icon"
-            />
-          </div>
-          <div class="ds-column-half ds-items-right">
-            <a
-              href="https://doity.com.br/evento-teste-frontend"
-              class="ds-btn-bordered"
+            <div
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <h5 style="color: #fff; text-decoration: underline; margin: 0">
+                Visão 360º
+              </h5>
+              <img
+                src="../assets/img/clipboard.svg"
+                width="10"
+                height="10"
+                style="margin-left: 5px"
+                class="clip-icon"
+              />
+            </div>
+            <button
+              style="
+                border-radius: 5px;
+                border: 1px solid white;
+                background-color: #ff2b34;
+                padding: 10px 25px 10px 25px;
+              "
             >
               Ir para o evento
-            </a>
+            </button>
           </div>
         </div>
       </div>
