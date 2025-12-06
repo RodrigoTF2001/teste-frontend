@@ -1,0 +1,163 @@
+/* Custom Styles Card Pesquisa */
+
+.pesquisa-card {
+  background: #f6f6f6;
+  padding: 25px 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.pesquisa-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 45px;
+  padding: 10px 20px;
+  color: #414651;
+  border: 1px solid #cdd1d9;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pesquisa-actions {
+  margin-left: auto; /* empurra para a direita */
+  display: flex;
+  gap: 10px;
+}
+
+.pesquisa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pesquisa-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+/* Área de info */
+.pesquisa-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+}
+
+.divider {
+  height: 40px;
+  width: 1px;
+  background: #ccc;
+}
+
+/* Status */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e7ffe1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+
+  color: #66bb33;
+}
+
+.dot {
+  background: #26c200;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Botões */
+.btn-outline {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid #c8cdd6;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease-out;
+}
+
+.btn-outline:hover {
+  background: #eaeef2;
+}
+
+/* Custom styles table pesquisa */
+
+.tabela-perguntas {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+}
+
+/* Cabeçalho */
+.tabela-header {
+  display: flex;
+  justify-content: space-between;
+  background: #f8fafb;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.acoes-header {
+  margin-right: 15px;
+}
+
+/* Linhas */
+.tabela-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-top: 1px solid #ececec;
+  font-size: 14px;
+}
+
+.pergunta {
+  color: #333;
+}
+
+/* Ações */
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+/* Apenas como placeholder pros ícones */
+.acoes i {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}

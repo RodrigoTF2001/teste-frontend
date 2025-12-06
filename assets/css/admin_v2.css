@@ -538,6 +538,25 @@ label.crop-label input {
   pointer-events: none;
 }
 
+.__button_adicionar-pergunta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  height: 45px;
+  min-width: 201px;
+  padding: 10px 20px;
+  color: #414651;
+  border: 1px solid #cdd1d9;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 .__button-avaliar {
   text-align: center;
   padding: 9px 35px;
@@ -1884,7 +1903,7 @@ label.crop-label input {
 }
 
 .breadcrumb {
-  color: #000;
+  color: #18181b;
   font-family: "Inter";
   font-size: 24px !important;
   font-style: normal;
@@ -1895,6 +1914,25 @@ label.crop-label input {
   width: 100%;
   padding: 0 !important;
   margin: auto;
+}
+
+.breadcrumb button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  height: 45px;
+  min-width: 201px;
+  padding: 10px 20px;
+  color: #414651;
+  border: 1px solid #cdd1d9;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .breadcrumb span {
@@ -3203,8 +3241,9 @@ span.error-marginegative {
 .table-resp,
 .table-resp {
   overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
 }
-
 .cd-multi-steps.text-center li.current > *,
 .cd-multi-steps.text-center li.visited > * {
   color: #ffffff;
