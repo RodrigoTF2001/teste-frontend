@@ -1,5 +1,27 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
+    url("../../adiciona-pergunta/404.html") format("truetype");
+}
+
 .custom-star-rating {
   margin: 20px 0px 20px 0;
+}
+
+.custom-text-research {
+  font-family: Inter !important;
+}
+
+h1.custom-text-research {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter !important;
+}
+
+p.custom-text-research {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Inter !important;
 }
 
 .custom-rating {
