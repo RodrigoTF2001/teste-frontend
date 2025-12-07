@@ -3544,11 +3544,9 @@ display: inline-block
 /* AREA DE SUBMISSOES */
 
 .painel-info-artigos {
-  border: 1px solid #eee;
   background-color: #fff;
   border-radius: 3px;
-  padding: 15px 20px;
-  margin: 20px 0;
+  margin: 0;
   overflow: hidden;
   font-size: 16px;
   line-height: 1.4em;
