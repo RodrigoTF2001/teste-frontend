@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/960.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/thickbox.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/home.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -1713,20 +1715,30 @@
 
                     <!-- Nome -->
                     <div class="input text required">
-                      <label for="PesquisaNome">Nome*</label>
+                      <label for="PesquisaNome"
+                        >Nome<span
+                          style="color: red; display: inline; float: none"
+                        >
+                          *</span
+                        >
+                      </label>
+
                       <input
                         name="data[Pesquisa][nome]"
-                        value="Pesquisa de Qualidade do Evento"
                         maxlength="255"
                         type="text"
                         id="PesquisaNome"
                         required="required"
                       />
                     </div>
-
                     <!-- Descrição -->
                     <div class="input textarea required">
-                      <label for="PesquisaDescricao">Descrição*</label>
+                      <label for="PesquisaDescricao"
+                        >Descrição<span
+                          style="color: red; display: inline; float: none"
+                          >*</span
+                        ></label
+                      >
                       <textarea
                         name="data[Pesquisa][descricao]"
                         class="ckeditor"
@@ -1734,37 +1746,93 @@
                         rows="5"
                         id="PesquisaDescricao"
                       >
-&lt;p&gt;Queremos saber como foi a sua experiência neste evento...&lt;/p&gt;</textarea
-                      >
+                      </textarea>
                     </div>
 
                     <!-- Período -->
-                    <div class="periodo flex">
-                      <div class="input text required">
-                        <label for="PesquisaDataDisponivel"
-                          >Data de início</label
-                        >
-                        <input
-                          name="data[Pesquisa][data_disponivel]"
-                          value="01/12/2025"
-                          type="text"
-                          id="PesquisaDataDisponivel"
-                          required="required"
-                        />
+
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        margin: 20px 0 0 0;
+                      "
+                    >
+                      <div class="input text" style="padding: 0; margin: 0">
+                        <label for="PesquisaDataDisponivel">Período</label>
                       </div>
 
-                      <div class="input text required">
-                        <label for="PesquisaDataTermino">Data de término</label>
-                        <input
-                          name="data[Pesquisa][data_termino]"
-                          value="31/12/2025"
-                          type="text"
-                          id="PesquisaDataTermino"
-                          required="required"
-                        />
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          padding: 0;
+                          margin: 0;
+                        "
+                      >
+                        <div
+                          class="input text required"
+                          style="width: 212px; position: relative"
+                        >
+                          <input
+                            name="data[Pesquisa][data_disponivel]"
+                            type="text"
+                            id="PesquisaDataDisponivel"
+                            placeholder="Data de Inicio"
+                            required="required"
+                            style="padding-right: 30px"
+                            maxlength="10"
+                          />
+                          <span
+                            style="
+                              position: absolute;
+                              right: 8px;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              font-size: 1.2em;
+                              color: #888;
+                              pointer-events: none;
+                            "
+                          >
+                            📅
+                          </span>
+                        </div>
+
+                        <div
+                          class="input text required"
+                          style="
+                            margin-left: 20px;
+                            width: 212px;
+                            position: relative;
+                          "
+                        >
+                          <input
+                            name="data[Pesquisa][data_termino]"
+                            type="text"
+                            id="PesquisaDataTermino"
+                            placeholder="Data de Termino"
+                            required="required"
+                            style="padding-right: 30px"
+                            maxlength="10"
+                          />
+                          <span
+                            style="
+                              position: absolute;
+                              right: 8px;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              font-size: 1.2em;
+                              color: #888;
+                              pointer-events: none;
+                            "
+                          >
+                            📅
+                          </span>
+                        </div>
                       </div>
                     </div>
-
                     <!-- Disponível -->
                     <div class="input checkbox">
                       <input
@@ -1783,11 +1851,20 @@
                     </div>
 
                     <!-- Enviar pesquisa para -->
-                    <div class="opcoes_enviar_para">
-                      <fieldset>
-                        <legend>Enviar pesquisa para</legend>
+                    <div
+                      class="opcoes_enviar_para"
+                      style="margin: 0; padding: 0"
+                    >
+                      <fieldset style="border: none; margin: 0; padding: 0">
+                        <legend style="padding: 0; margin-bottom: 10px">
+                          Enviar pesquisa para
+                        </legend>
 
-                        <label for="PesquisaEnviarPara0" class="radio-inline">
+                        <label
+                          for="PesquisaEnviarPara0"
+                          class="radio-inline"
+                          style="margin-right: 20px; display: inline-block"
+                        >
                           <input
                             type="radio"
                             name="data[Pesquisa][enviar_para]"
@@ -1798,7 +1875,11 @@
                           Todos os confirmados
                         </label>
 
-                        <label for="PesquisaEnviarPara1" class="radio-inline">
+                        <label
+                          for="PesquisaEnviarPara1"
+                          class="radio-inline"
+                          style="display: inline-block"
+                        >
                           <input
                             type="radio"
                             name="data[Pesquisa][enviar_para]"
@@ -1811,11 +1892,24 @@
                     </div>
 
                     <!-- Botões -->
-                    <div class="row buttons" style="margin-left: 20px">
-                      <button type="button" class="btn-cancelar">
-                        Cancelar
+                    <div
+                      class="buttons"
+                      style="display: flex; justify-content: space-between"
+                    >
+                      <button class="button-cancel">
+                        <a
+                          href="../index.html"
+                          style="
+                            display: inline-block;
+                            text-decoration: none;
+                            text-align: center;
+                            color: inherit;
+                          "
+                        >
+                          Cancelar
+                        </a>
                       </button>
-                      <button type="submit" class="btn-salvar vermelho">
+                      <button type="submit" class="enviar-pesquisa-btn">
                         Salvar
                       </button>
                     </div>
@@ -1847,7 +1941,7 @@
                 }
 
                 .config_pesquisa .checkbox {
-                  margin-left: -4px;
+                  margin: 20px 0px 30px 0;
                 }
 
                 .config_pesquisa input[type="radio"] {
@@ -1858,7 +1952,6 @@
                 .opcoes_enviar_para label {
                   float: left;
                   margin-right: 10px;
-                  margin-left: 10px;
                 }
 
                 .opcoes_enviar_para {
@@ -1873,6 +1966,18 @@
                 }
                 .mensagem {
                   margin: 10px 0 0 0;
+                }
+                .button-cancel {
+                  height: 45px;
+                  padding: 10px 20px;
+                  color: #414651;
+                  border: 1px solid #cdd1d9;
+                  border-radius: 8px;
+                  background: #f9fafb;
+                  font-weight: 600;
+                  font-size: 14px;
+                  cursor: pointer;
+                  white-space: nowrap;
                 }
               </style>
             </div>
@@ -2027,5 +2132,6 @@
         padding-top: 0 !important;
       }
     </style>
+    <script src="../assets/js/mask-data.js"></script>
   </body>
 </html>
