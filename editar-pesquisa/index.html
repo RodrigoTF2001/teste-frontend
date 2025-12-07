@@ -164,6 +164,30 @@
         -moz-opacity: 0.75;
         filter: alpha(opacity=75);
       }
+
+      .buttons-container-custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 10px;
+      }
+
+      .btn-custom {
+        margin-top: 0 !important;
+      }
+
+      @media (max-width: 600px) {
+        .buttons-container-custom {
+          flex-direction: row-reverse;
+          gap: 15px;
+        }
+
+        .btn-custom {
+          width: 100% !important;
+          margin-top: 0 !important;
+        }
+      }
     </style>
     <div id="wrapper">
       <div class="container" style="width: 100% !important">
@@ -1483,34 +1507,7 @@
               <div class="breadcrumb" style="padding: 0 35px">
                 <p
                   class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"
-                >
-                  <a href="https://doity.com.br/admin/eventos/painel/279481"
-                    >Painel</a
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                  >
-                    <path
-                      d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087"
-                      stroke="#FF2B34"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg
-                  >Pesquisas
-                </p>
-                <span
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    width: fit-content;
-                  "
-                  >Pesquisas</span
-                >
+                ></p>
               </div>
 
               <div id="modal-help" class="contrato modal modal-large">
@@ -1860,11 +1857,7 @@
                           Enviar pesquisa para
                         </legend>
 
-                        <label
-                          for="PesquisaEnviarPara0"
-                          class="radio-inline"
-                          style="margin-right: 20px; display: inline-block"
-                        >
+                        <label for="PesquisaEnviarPara0" class="radio-inline">
                           <input
                             type="radio"
                             name="data[Pesquisa][enviar_para]"
@@ -1872,13 +1865,15 @@
                             value="0"
                             checked="checked"
                           />
-                          Todos os confirmados
+                          <span style="margin-left: 6px">
+                            Todos os confirmados
+                          </span>
                         </label>
 
                         <label
                           for="PesquisaEnviarPara1"
                           class="radio-inline"
-                          style="display: inline-block"
+                          style="margin-left: 30px"
                         >
                           <input
                             type="radio"
@@ -1886,17 +1881,26 @@
                             id="PesquisaEnviarPara1"
                             value="1"
                           />
-                          Só credenciados
+                          <span style="margin-left: 6px">
+                            Só credenciados
+                          </span>
                         </label>
                       </fieldset>
                     </div>
 
                     <!-- Botões -->
                     <div
-                      class="buttons"
-                      style="display: flex; justify-content: space-between"
+                      class="buttons buttons-container-custom"
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                      "
                     >
-                      <button class="button-cancel">
+                      <button
+                        class="button-cancel btn-custom"
+                        style="margin-top: 20px"
+                      >
                         <a
                           href="../index.html"
                           style="
@@ -1909,7 +1913,11 @@
                           Cancelar
                         </a>
                       </button>
-                      <button type="submit" class="enviar-pesquisa-btn">
+                      <button
+                        type="submit"
+                        class="enviar-pesquisa-btn btn-custom"
+                        style="margin-top: 20px"
+                      >
                         Salvar
                       </button>
                     </div>
@@ -1947,6 +1955,7 @@
                 .config_pesquisa input[type="radio"] {
                   margin: 1px -1px 0px;
                   float: left;
+                  accent-color: #ff2b34;
                 }
 
                 .opcoes_enviar_para label {
