@@ -1608,28 +1608,29 @@
 
                   <div class="pesquisa-card">
                     <div class="pesquisa-header">
-                      <h2>Nome da Pesquisa</h2>
+                      <h2 id="displayNomePesquisa">Nome da Pesquisa</h2>
                     </div>
 
                     <div class="pesquisa-info">
                       <div class="info-item">
                         <span class="label">Data</span>
-                        <strong>16/02/2025</strong>
+                        <strong id="displayDataPesquisa">16/02/2025</strong>
                       </div>
 
                       <div class="divider"></div>
 
                       <div class="info-item">
                         <span class="label">Enviar pesquisa para:</span>
-                        <strong>Só participantes credenciados</strong>
+                        <strong id="displayPublicoPesquisa"
+                          >Só participantes credenciados</strong
+                        >
                       </div>
 
                       <div class="divider"></div>
 
-                      <div class="status">
+                      <div class="status" id="displayStatusPesquisa">
                         <span class="dot"></span> Disponível
                       </div>
-
                       <div class="pesquisa-actions">
                         <button class="btn-outline">
                           <a
@@ -1932,6 +1933,8 @@
         padding-top: 0 !important;
       }
     </style>
-    <script src="./assets/js/add-question.js"></script>
+    <script src="./assets/js/survey-manager.js"></script>
+
+    <script src="./assets/js/questions-manager.js"></script>
   </body>
 </html>

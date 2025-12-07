@@ -78,6 +78,14 @@ table th {
   padding-bottom: 0.625em;
 }
 
+.enviar-avaliacao {
+  display: flex;
+  justify-content: end;
+  max-width: 67em;
+  margin: 0 auto;
+  padding: 35px 45px;
+}
+
 .dados-artigo .img-banner {
   padding-bottom: 10px;
 }
@@ -252,7 +260,7 @@ table th {
 }
 
 .clearfix {
-  *zoom: 1;
+  zoom: 1;
 }
 
 *,
