@@ -19,8 +19,8 @@ Abra o arquivo principal:
 
 ### ✔️ Opção 3 — Visualizar online via Netlify
 🔗 Acesse a versão publicada aqui:  
-**(inserir link do Netlify aqui)**
-
+[**(inserir link do Netlify aqui)**
+](https://doityteste.netlify.app/)
 ## 🧠 Decisões Técnicas
 
 - **Foco na fidelidade de UX** e hierarquia do layout
