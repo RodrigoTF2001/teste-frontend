@@ -1936,41 +1936,46 @@
                 </div>
               </div>
               <div class="box pesquisa_comentarios">
-                <h2>Comentários (32)</h2>
+                <h2 class="title-count">Comentários (32)</h2>
 
                 <div class="content">
-                  <table class="tabela-comentarios">
-                    <thead>
-                      <tr>
-                        <th>Comentário</th>
-                        <th>Participante</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          O evento foi legal.O evento foi legal.O evento foi
-                          legal.O evento foi legal.O evento foi legal.O evento
-                          foi legal.O evento foi legal.O evento foi legal.O
-                          evento foi legal.O evento foi legal.O evento foi
-                          legal.
-                        </td>
-                        <td>Eduardo Leandro Silva de Oliveira</td>
-                      </tr>
-                      <tr>
-                        <td>Falta de organização nas filas.</td>
-                        <td>Marcelo Araújo Lins</td>
-                      </tr>
-                      <tr>
-                        <td>Satisfação? Só decepção.</td>
-                        <td>Tom Lima</td>
-                      </tr>
-                      <tr>
-                        <td>Top dismais! Ansioso para a próxima edição.</td>
-                        <td>Estela Mendes da Rocha</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="tabela-perguntas">
+                    <div class="tabela-header">
+                      <span>Comentário</span>
+                      <span class="acoes-header">Participante</span>
+                    </div>
+
+                    <div class="tabela-row">
+                      <span class="comentario-col">
+                        O evento foi legal.O evento foi legal.O evento foi
+                        legal.O evento foi legal.O evento foi legal.O evento foi
+                        legal.O evento foi legal.O evento foi legal.O evento foi
+                        legal.O evento foi legal.O evento foi legal.
+                      </span>
+                      <span class="participante-col"
+                        >Eduardo Leandro Silva de Oliveira</span
+                      >
+                    </div>
+
+                    <div class="tabela-row">
+                      <span class="pergunta"
+                        >Falta de organização nas filas.</span
+                      >
+                      <span class="acoes">Marcelo Araújo Lins</span>
+                    </div>
+
+                    <div class="tabela-row">
+                      <span class="pergunta">Satisfação? Só decepção.</span>
+                      <span class="acoes">Tom Lima</span>
+                    </div>
+
+                    <div class="tabela-row">
+                      <span class="pergunta"
+                        >Top dismais! Ansioso para a próxima edição.</span
+                      >
+                      <span class="acoes">Estela Mendes da Rocha</span>
+                    </div>
+                  </div>
 
                   <div class="paginacao">
                     <button class="btn-paginacao ativo">1</button>
@@ -1982,6 +1987,7 @@
                   </div>
                 </div>
               </div>
+
               <div>
                 <button class="btn-outline">
                   <a href="../index.html" style="text-decoration: none">
@@ -1993,28 +1999,6 @@
               <style>
                 .pesquisa_comentarios {
                   margin-top: 20px;
-                }
-
-                .tabela-comentarios {
-                  width: 100%;
-                  border-collapse: collapse;
-                  font-size: 14px;
-                }
-
-                .tabela-comentarios thead {
-                  background-color: #f0f0f0;
-                }
-
-                .tabela-comentarios th {
-                  padding: 12px;
-                  text-align: left;
-                  font-weight: 600;
-                  border-bottom: 1px solid #ddd;
-                }
-
-                .tabela-comentarios td {
-                  padding: 12px;
-                  border-bottom: 1px solid #eee;
                 }
 
                 .paginacao {

@@ -149,8 +149,16 @@
   background: #f8fafb;
   padding: 14px 20px;
   font-size: 14px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.title-count {
+  font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #4a4a4a;
+  font-family: Inter !important;
+  margin-bottom: 30px;
 }
 
 .acoes-header {
@@ -165,6 +173,16 @@
   padding: 16px 20px;
   border-top: 1px solid #ececec;
   font-size: 14px;
+}
+
+.comentario-col {
+  flex: 2;
+  max-width: 682px;
+}
+
+.participante-col {
+  flex: 1;
+  text-align: end;
 }
 
 .pergunta {

@@ -1620,6 +1620,17 @@
               </style>
             </div>
             <style>
+              .calendar-icon {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+              }
+              .date_input {
+                width: 212px !important;
+                position: relative;
+              }
               .top2_breadcrumb span {
                 color: #000;
                 font-family: Inter;
@@ -1768,40 +1779,27 @@
                           margin: 0;
                         "
                       >
-                        <div
-                          class="input text required"
-                          style="width: 212px; position: relative"
-                        >
+                        <div class="input text required date_input">
                           <input
                             name="data[Pesquisa][data_disponivel]"
                             type="text"
                             id="PesquisaDataDisponivel"
                             placeholder="Data de Inicio"
                             required="required"
-                            style="padding-right: 30px"
                             maxlength="10"
                           />
-                          <span
-                            style="
-                              position: absolute;
-                              right: 0px;
-                              top: 45%;
-                              transform: translateY(-50%);
-                              font-size: 1.2em;
-                              pointer-events: none;
-                            "
-                          >
-                            📅
+                          <span class="calendar-icon">
+                            <img
+                              src="../assets/img/calendar.svg"
+                              width="20"
+                              height="20"
+                            />
                           </span>
                         </div>
 
                         <div
-                          class="input text required"
-                          style="
-                            margin-left: 20px;
-                            width: 212px;
-                            position: relative;
-                          "
+                          class="input text required date_input"
+                          style="margin-left: 20px"
                         >
                           <input
                             name="data[Pesquisa][data_termino]"
@@ -1809,20 +1807,14 @@
                             id="PesquisaDataTermino"
                             placeholder="Data de Termino"
                             required="required"
-                            style="padding-right: 30px"
                             maxlength="10"
                           />
-                          <span
-                            style="
-                              position: absolute;
-                              right: 0px;
-                              top: 45%;
-                              transform: translateY(-50%);
-                              font-size: 1.2em;
-                              pointer-events: none;
-                            "
-                          >
-                            📅
+                          <span class="calendar-icon">
+                            <img
+                              src="../assets/img/calendar.svg"
+                              width="20"
+                              height="20"
+                            />
                           </span>
                         </div>
                       </div>
