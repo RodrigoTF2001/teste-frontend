@@ -42,7 +42,7 @@
 .forms .input {
   display: inline-block;
   border-top: 1px solid #dbdbdb;
-  padding: 10px 0;
+  padding: 0px 0 10px 0;
   width: 100%;
 }
 
