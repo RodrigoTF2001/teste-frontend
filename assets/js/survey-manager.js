@@ -148,9 +148,13 @@ function loadSurveyData() {
   }
 
   if (elStatus) {
-    elStatus.innerHTML = surveyData.isAtivo
-      ? '<span class="dot" style="background-color: #27ae60;"></span> Disponível'
-      : '<span class="dot" style="background-color: #aaa;"></span> Indisponível';
+    if (surveyData.isAtivo) {
+      elStatus.classList.remove("indisponivel");
+      elStatus.innerHTML = '<span class="dot"></span> Disponível';
+    } else {
+      elStatus.classList.add("indisponivel");
+      elStatus.innerHTML = '<span class="dot"></span> Indisponível';
+    }
   }
 }
 

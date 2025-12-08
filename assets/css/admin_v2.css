@@ -775,7 +775,7 @@ label.crop-label input {
 
 /*navheader*/
 .__headbar {
-  width: 100%;
+  width: calc(100dvw - 250px);
   display: block;
   padding: 25px 91px;
   background-color: #f6f6f6;
@@ -4232,6 +4232,9 @@ input#LoteHoraInicioCredenciamento {
 @media (max-width: 960px) {
   .holder-left {
     display: none;
+  }
+  .__headbar {
+    width: 100dvw;
   }
 }
 
