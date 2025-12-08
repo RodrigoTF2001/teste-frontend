@@ -21,6 +21,18 @@ Abra o arquivo principal:
 🔗 Acesse a versão publicada aqui:  
 [**(Dominio do projeto)**
 ](https://doityteste.netlify.app/)
+
+## ✨ Principais Funcionalidades Entregues
+
+- Tela principal de **Pesquisa de Satisfação**
+- **CRUD** simulando interações em pesquisa (criação, edição, exclusão)
+- Agrupamento de dados simulando **resultados de survey**
+- Estilização seguindo o **Figma**:
+  - Hierarquia visual respeitada
+  - Classes reutilizáveis para padronização
+  - Ajustes pontuais via `style=""` apenas para pequenos detalhes visuais
+- Responsividade parcial e estrutura semântica em HTML
+
 ## 🧠 Decisões Técnicas
 
 - **Foco na fidelidade de UX** e hierarquia do layout
