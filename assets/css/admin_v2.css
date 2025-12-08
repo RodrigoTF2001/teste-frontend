@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
-    url("../../adiciona-pergunta/404.html") format("truetype");
+    url("../../404.html") format("truetype");
 }
 
 h2 {
@@ -1464,7 +1464,7 @@ label.crop-label input {
   transition: 200ms all;
   width: 15px;
   height: 15px;
-  background-image: url("404.html");
+  background-image: url("../../404.html");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -3290,6 +3290,9 @@ span.error-marginegative {
     display: unset !important;
     width: 100% !important;
   }
+  .__perfil .__info {
+    display: none !important;
+  }
   .mobile-grid_100 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
@@ -3390,7 +3393,7 @@ Basic Style
   content: "";
   height: 16px;
   width: 16px;
-  background: url("404.html") no-repeat center center;
+  background: url("../../404.html") no-repeat center center;
   vertical-align: middle;
 }
 .cd-breadcrumb.custom-icons li > *::before,
@@ -3402,7 +3405,7 @@ Basic Style
   width: 20px;
   margin-right: 0.4em;
   margin-top: -2px;
-  background: url("404.html") no-repeat 0 0;
+  background: url("../../404.html") no-repeat 0 0;
   vertical-align: middle;
 }
 .cd-breadcrumb.custom-icons li:not(.current):nth-of-type(2) > *::before,
@@ -4436,7 +4439,12 @@ th.acoes {
   .__tabela-padrao--thead .td {
     display: none;
   }
-
+  .__button_adicionar-pergunta {
+    width: 100%;
+  }
+  #resultadoPesquisa {
+    display: none;
+  }
   .__tabela-padrao .td[data-name]:before {
     content: attr(data-name) ":";
     color: currentColor;

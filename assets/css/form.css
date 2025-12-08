@@ -675,7 +675,7 @@ ul.input .sb-dropdown a:visited {
 /* //////////////////// DATE PICKER \\\\\\\\\\\\\\\\\\\\ */
 
 .input input.datepicker {
-  background-image: url("404.html");
+  background-image: url("../../404.html");
   background-position: right top;
   background-repeat: no-repeat;
   background-color: transparent;

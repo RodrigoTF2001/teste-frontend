@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
-    url("../../editar-pesquisa/404.html") format("truetype");
+    url("../../404.html") format("truetype");
 }
 
 /* Custom Styles Card Pesquisa */
@@ -14,12 +14,6 @@
   cursor: pointer;
   font-size: 14px;
   height: 44px;
-}
-
-@media (max-width: 768px) {
-  .enviar-pesquisa-btn {
-    width: 100%;
-  }
 }
 
 .pesquisa-card {
@@ -51,7 +45,7 @@
 }
 
 .pesquisa-actions {
-  margin-left: auto; /* empurra para a direita */
+  margin-left: auto;
   display: flex;
   gap: 10px;
 }
@@ -368,4 +362,35 @@
 
 .close-btn:hover {
   color: #333;
+}
+@media (max-width: 768px) {
+  .pesquisa-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .pesquisa-info .divider {
+    display: none;
+  }
+
+  .pesquisa-info .info-item {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+  }
+  .pesquisa-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+  .pesquisa-actions button {
+    width: 100%;
+  }
+  .enviar-pesquisa-btn {
+    width: 100%;
+  }
+  #btnConfirmarEnvio {
+    width: auto;
+  }
 }
