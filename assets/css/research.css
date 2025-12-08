@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
+    url("../../404.html") format("truetype");
+}
+
+.button-event {
+  font-family: Inter !important;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #ff2b34;
+  padding: 10px 25px 10px 25px;
+}
+
+.custom-star-rating {
+  margin: 20px 0px 20px 0;
+}
+
+.custom-text-research {
+  font-family: Inter !important;
+}
+
+h1.custom-text-research {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter !important;
+}
+
+p.custom-text-research {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Inter !important;
+}
+
+.custom-rating {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  /*position: relative;*/
+  margin-bottom: 0px !important;
+}
+.custom-rating-input {
+  float: right;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin: 0 0 0 -1em;
+  opacity: 0;
+  display: none;
+}
+.custom-rating:hover .custom-rating-star:hover,
+.custom-rating:hover .custom-rating-star:hover ~ .custom-rating-star,
+.custom-rating-input:checked ~ .custom-rating-star {
+  background-position: 0 34px;
+}
+
+.custom-rating-star,
+.custom-rating:hover .custom-rating-star {
+  position: relative;
+  float: right;
+  display: block;
+  width: 32px;
+  height: 33px;
+  margin-right: 5px;
+  background: url("../img/estrela-pesquisa.png") 0 0px;
+}
