@@ -1,7 +1,9 @@
 # Teste Tecnico Front-end
+
 Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
 
-## 🎯 Objetivo  
+## 🎯 Objetivo
+
 Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layout, comportamento e orientações do projeto no Figma.
 
 🧭 Como rodar o projeto
@@ -9,15 +11,18 @@ Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layo
 Você pode acessar de diferentes formas:
 
 ### ✔️ Opção 1 — Acessar diretamente pelo navegador
+
 Abra o arquivo principal:
 /index.html Ou qualquer outra página que contenha seu próprio `index.html`.
 
 ### ✔️ Opção 2 — Via extensão **Live Server**
-1. Instale a extensão *Live Server* no VS Code
+
+1. Instale a extensão _Live Server_ no VS Code
 2. Clique com botão direito no `index.html`
 3. Selecione **“Open with Live Server”**
 
 ### ✔️ Opção 3 — Visualizar online via Netlify
+
 🔗 Acesse a versão publicada aqui:  
 [**(Dominio do projeto)**
 ](https://doityteste.netlify.app/)
@@ -51,6 +56,3 @@ Abra o arquivo principal:
 ## 🏁 Conclusão
 
 O projeto foi desenvolvido priorizando organização, clareza de código e fidelidade às funcionalidades esperadas. A base está sólida para evoluções rápidas e colaboração com o time.
-
-
-
