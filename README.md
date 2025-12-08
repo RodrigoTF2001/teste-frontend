@@ -19,7 +19,7 @@ Abra o arquivo principal:
 
 ### ✔️ Opção 3 — Visualizar online via Netlify
 🔗 Acesse a versão publicada aqui:  
-[**(inserir link do Netlify aqui)**
+[**(Dominio do projeto)**
 ](https://doityteste.netlify.app/)
 ## 🧠 Decisões Técnicas
 
