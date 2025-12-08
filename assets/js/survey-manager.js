@@ -15,6 +15,21 @@ if (displayNome) {
   loadSurveyData();
 }
 
+const closeBtnModal = document.getElementById("btnCloseSuccessModal");
+if (closeBtnModal) {
+  closeBtnModal.addEventListener("click", function () {
+    const modal = document.getElementById("customSuccessModal");
+    if (modal) {
+      modal.classList.remove("active");
+
+      const isEditingPage = document.getElementById("PesquisaNome");
+      if (isEditingPage) {
+        window.location.href = "../index.html";
+      }
+    }
+  });
+}
+
 const inputNome = document.getElementById("PesquisaNome");
 if (inputNome) {
   prefillEditForm();
@@ -26,11 +41,12 @@ if (inputNome) {
       saveSurveyData();
     });
   }
-
-  const closeBtnModal = document.getElementById("btnCloseSuccessModal");
-  if (closeBtnModal) {
-    closeBtnModal.addEventListener("click", function () {
-      window.location.href = "../index.html";
+} else {
+  const btnEnviarPreview = document.querySelector(".enviar-pesquisa-btn");
+  if (btnEnviarPreview) {
+    btnEnviarPreview.addEventListener("click", function (e) {
+      e.preventDefault();
+      showSuccessModal(false);
     });
   }
 }
@@ -95,15 +111,19 @@ function saveSurveyData() {
   showSuccessModal();
 }
 
-function showSuccessModal() {
+function showSuccessModal(redirect = true) {
   const modal = document.getElementById("customSuccessModal");
   if (modal) {
     modal.classList.add("active");
-    setTimeout(function () {
-      window.location.href = "../index.html";
-    }, 3000);
+    if (redirect) {
+      setTimeout(function () {
+        window.location.href = "../index.html";
+      }, 3000);
+    }
   } else {
-    window.location.href = "../index.html";
+    if (redirect) {
+      window.location.href = "../index.html";
+    }
   }
 }
 

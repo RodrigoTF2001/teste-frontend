@@ -142,7 +142,7 @@
             </div>
             <button
               style="
-                border-radius: 5px;
+                border-radius: 8px;
                 border: 1px solid white;
                 background-color: #ff2b34;
                 padding: 10px 25px 10px 25px;
@@ -230,35 +230,39 @@
       href="../assets/css/font-awesome.min-1.css"
     />
     <link rel="stylesheet" type="text/css" href="../assets/css/messages.css" />
-    <div style="margin-top: 20px" class="container-avaliacao-apresentacao">
-      <div>
-        <div class="dados-centralizados">
-          <h1 class="custom-text-research" style="color: #18181b">
-            Visão 360º
-          </h1>
-        </div>
-        <div class="border-dados-pesquisa">
-          <p></p>
-          <p class="custom-text-research" style="color: #777777">
-            E vem sendo utilizado desde o século XVI, quando um impressor
-            desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
-            um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco
-            séculos, como também ao salto para a editoração eletrônica,
-            permanecendo essencialmente inalterado. Se popularizou na década de
-            60, quando a Letraset lançou decalques contendo passagens de Lorem
-            Ipsum, e mais recentemente quando passou a ser integrado a softwares
-            de editoração eletrônica como Aldus PageMaker.
-          </p>
-
-          <p></p>
-        </div>
-        <div class="border-dados-pesquisa">
+    <div class="dados-avaliacao" style="margin-top: 20px">
+      <div class="container-avaliacao-apresentacao">
+        <div>
           <div class="dados-centralizados">
-            <span><b>Disponível até 31/12/2025 </b></span>
+            <h1 class="custom-text-research" style="color: #18181b">
+              Visão 360º
+            </h1>
           </div>
-        </div>
+          <div class="border-dados-pesquisa">
+            <p></p>
+            <p class="custom-text-research" style="color: #777777">
+              E vem sendo utilizado desde o século XVI, quando um impressor
+              desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
+              um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+              cinco séculos, como também ao salto para a editoração eletrônica,
+              permanecendo essencialmente inalterado. Se popularizou na década
+              de 60, quando a Letraset lançou decalques contendo passagens de
+              Lorem Ipsum, e mais recentemente quando passou a ser integrado a
+              softwares de editoração eletrônica como Aldus PageMaker.
+            </p>
 
-        <!-- .container-avaliacao-apresentacao -->
+            <p></p>
+          </div>
+          <div class="border-dados-pesquisa">
+            <div class="dados-centralizados">
+              <span>
+                <b id="pergunta-descricao">Disponível até 31/12/2025 </b></span
+              >
+            </div>
+          </div>
+
+          <!-- .container-avaliacao-apresentacao -->
+        </div>
       </div>
     </div>
     <div class="dados-avaliacao">
@@ -776,33 +780,36 @@
       <!-- .container-avaliacao-apresentacao -->
     </div>
     <div>
-      <div class="container-avaliacao-apresentacao">
-        <div class="dados-avaliar">
-          <div class="row">
-            <div class="texarea">
-              <label for="PesquisaAvaliacaoComentario"
-                >Deixe o seu comentário</label
-              ><textarea
-                name="data[PesquisaAvaliacao][comentario]"
-                rows="3"
-                class="form-control"
-                required="required"
-                cols="30"
-                id="PesquisaAvaliacaoComentario"
-              ></textarea>
-            </div>
-            <div style="display: none">
-              <input
-                type="hidden"
-                name="data[_Token][fields]"
-                value="9147b88897edd3b6542ca4589e5555f9a3c0f8da%3A"
-                id="TokenFields1616892081"
-              /><input
-                type="hidden"
-                name="data[_Token][unlocked]"
-                value=""
-                id="TokenUnlocked826685311"
-              />
+      <div class="dados-avaliacao">
+        <div class="container-avaliacao-apresentacao">
+          <div class="dados-avaliar">
+            <div class="row">
+              <div class="texarea">
+                <label id="pergunta-descricao" for="PesquisaAvaliacaoComentario"
+                  >Deixe o seu comentário</label
+                ><textarea
+                  name="data[PesquisaAvaliacao][comentario]"
+                  rows="3"
+                  class="form-control"
+                  required="required"
+                  cols="30"
+                  style="height: 123px"
+                  id="PesquisaAvaliacaoComentario"
+                ></textarea>
+              </div>
+              <div style="display: none">
+                <input
+                  type="hidden"
+                  name="data[_Token][fields]"
+                  value="9147b88897edd3b6542ca4589e5555f9a3c0f8da%3A"
+                  id="TokenFields1616892081"
+                /><input
+                  type="hidden"
+                  name="data[_Token][unlocked]"
+                  value=""
+                  id="TokenUnlocked826685311"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -842,5 +849,18 @@
         </div>
       </div>
     </div>
+    <div id="customSuccessModal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-btn" id="btnCloseSuccessModal">&times;</span>
+        <img
+          src="../assets/img/FlashMes-success.svg"
+          alt="Sucesso"
+          width="50"
+          height="50"
+        />
+        <h3>Pesquisa respondida!</h3>
+      </div>
+    </div>
+    <script src="../assets/js/survey-manager.js"></script>
   </body>
 </html>

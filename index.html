@@ -174,16 +174,15 @@
 
       .modal-content-confirm {
         background-color: #fff;
-        padding: 40px 30px;
+        padding: 35px;
         border-radius: 8px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         text-align: center;
-        max-width: 400px;
-        width: 90%;
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
         animation: slideIn 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
       }
 
@@ -203,7 +202,6 @@
         font-size: 16px;
         font-weight: 600; /* Semibold */
         margin: 0;
-        line-height: 1.4;
       }
 
       .confirm-text {
@@ -211,16 +209,13 @@
         font-size: 12px;
         font-weight: 400; /* Normal */
         margin: 0;
-        line-height: 1.5;
-        max-width: 80%;
       }
 
       .modal-actions {
         display: flex;
-        gap: 15px;
-        margin-top: 10px;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
+        margin-top: 20px;
       }
     </style>
     <div id="wrapper">
@@ -1809,38 +1804,6 @@
                   </div>
                 </div>
               </div>
-              <!-- MENSAGEM PERGUNTANDO SE DESEJA ENVIAR PARA E-MAIL PARA OS PARTICIPANTES INFORMANDO QUE O CERTIFICADO ESTÁ LIBERADO -->
-              <div id="container">
-                <div id="content">
-                  <!-- modal content -->
-                  <div id="osx-modal-content">
-                    <div id="osx-modal-title">Atenção:</div>
-                    <div id="osx-modal-data">
-                      <p>
-                        Você só poderá enviar essa pesquisa uma única vez.<br />
-                        Conforme você configurou, ela será enviada para todos os
-                        <b>confirmados</b> no evento.
-                      </p>
-                      <div class="submit">
-                        <a
-                          href="https://doity.com.br/admin/pesquisas/index/279481"
-                          id="apenas-liberar"
-                          style="width: 70px; float: left; margin: 10px 10px"
-                          class="osx-acao-secundaria"
-                          >Cancelar</a
-                        >
-                        <a
-                          href="https://doity.com.br/admin/pesquisas/enviar/1402"
-                          id="liberar-e-enviar"
-                          style="width: 110px; float: right; margin: 10px 10px"
-                          class="osx-acao-principal"
-                          >Enviar pesquisa</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div
               style="
@@ -1956,8 +1919,7 @@
     </div>
     <div id="modalConfirmacaoEnvio" class="modal-overlay-confirm">
       <div class="modal-content-confirm">
-        <!-- Ícone de Alerta Amarelo -->
-        <div class="icon-warning">
+        <div>
           <svg
             width="50"
             height="50"
@@ -1982,8 +1944,8 @@
         </p>
 
         <div class="modal-actions">
-          <button id="btnCancelarEnvio" class="btn-cancel">Cancelar</button>
-          <button id="btnConfirmarEnvio" class="btn-confirm">
+          <button id="btnCancelarEnvio" class="btn-outline">Cancelar</button>
+          <button id="btnConfirmarEnvio" class="enviar-pesquisa-btn">
             Enviar Pesquisa
           </button>
         </div>

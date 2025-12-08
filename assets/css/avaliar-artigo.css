@@ -66,7 +66,7 @@ table th {
 .dados-avaliacao {
   background-color: #eeeeee;
   color: #000000;
-  padding: 1.875em;
+  padding: 10px;
 }
 
 .dados-avaliacao .dados-artigo .titulo-artigo {
@@ -81,9 +81,9 @@ table th {
 .enviar-avaliacao {
   display: flex;
   justify-content: end;
-  max-width: 67em;
+  max-width: 62em;
   margin: 0 auto;
-  padding: 35px 45px;
+  padding: 12px 12px 0 12px;
 }
 
 .dados-artigo .img-banner {
@@ -377,7 +377,7 @@ header {
   margin: 0 auto;
   background-color: #fff;
   padding: 35px 40px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .container-avaliacao-apresentacao h1 {
@@ -434,7 +434,7 @@ header {
     justify-content: center !important;
   }
   .dados-avaliacao {
-    padding: 20px;
+    padding: 10px;
   }
   .container-avaliacao {
     padding: 0;
