@@ -151,6 +151,77 @@
         -moz-opacity: 0.75;
         filter: alpha(opacity=75);
       }
+
+      .modal-overlay-confirm {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-overlay-confirm.active {
+        display: flex;
+        opacity: 1;
+      }
+
+      .modal-content-confirm {
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        animation: slideIn 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .confirm-title {
+        color: #333;
+        font-size: 16px;
+        font-weight: 600; /* Semibold */
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      .confirm-text {
+        color: #666;
+        font-size: 12px;
+        font-weight: 400; /* Normal */
+        margin: 0;
+        line-height: 1.5;
+        max-width: 80%;
+      }
+
+      .modal-actions {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+      }
     </style>
     <div id="wrapper">
       <div class="container" style="width: 100% !important">
@@ -1780,7 +1851,12 @@
                 justify-content: end;
               "
             >
-              <button class="enviar-pesquisa-btn">Enviar Pesquisa</button>
+              <button
+                class="enviar-pesquisa-btn"
+                id="btnEnviarPesquisaPrincipal"
+              >
+                Enviar Pesquisa
+              </button>
             </div>
             <div class="footer">
               <div id="footer">
@@ -1878,7 +1954,41 @@
         </div>
       </div>
     </div>
+    <div id="modalConfirmacaoEnvio" class="modal-overlay-confirm">
+      <div class="modal-content-confirm">
+        <!-- Ícone de Alerta Amarelo -->
+        <div class="icon-warning">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2L1 21H23L12 2ZM12 6L19.53 19H4.47L12 6ZM11 10V14H13V10H11ZM11 16V18H13V16H11Z"
+              fill="#F2C94C"
+            />
+          </svg>
+        </div>
 
+        <h3 class="confirm-title">
+          Atenção: Você só poderá enviar essa pesquisa uma vez.
+        </h3>
+
+        <p class="confirm-text">
+          Conforme você configurou, ela será enviada para todos os confirmados
+          no evento
+        </p>
+
+        <div class="modal-actions">
+          <button id="btnCancelarEnvio" class="btn-cancel">Cancelar</button>
+          <button id="btnConfirmarEnvio" class="btn-confirm">
+            Enviar Pesquisa
+          </button>
+        </div>
+      </div>
+    </div>
     <style>
       #modal-info-feedback-pos-evento {
         border: none;
