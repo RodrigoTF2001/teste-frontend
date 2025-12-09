@@ -12,7 +12,7 @@ Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layo
 [**(Video explicativo)**
 ](https://streamable.com/79bwk6)
 
-🧭 Como rodar o projeto
+## 🧭 Como rodar o projeto
 
 Você pode acessar de diferentes formas:
 
