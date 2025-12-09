@@ -36,7 +36,7 @@ Abra o arquivo principal:
 ## ✨ Principais Funcionalidades Entregues
 
 - Tela principal de **Pesquisa de Satisfação**
-- **CRUD** simulando interações em pesquisa (criação, edição, exclusão)
+- **CRUD** simulando interações em perguntas (criação, edição, exclusão)
 - Agrupamento de dados simulando **resultados de survey**
 - Estilização seguindo o **Figma**:
   - Hierarquia visual respeitada
