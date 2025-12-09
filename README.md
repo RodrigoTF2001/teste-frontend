@@ -4,7 +4,13 @@ Este repositório contém o desafio técnico para a vaga de Front-end na Doity.
 
 ## 🎯 Objetivo
 
-Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layout, comportamento e orientações do projeto no Figma.
+Desenvolver a interface da feature **Pesquisa de Satisfaçāo**, seguindo o layout, comportamento e orientações do projeto no Figma.7
+
+## ▶️ Vídeo Explicativo
+
+🔗 Link do vídeo:
+[**(Video explicativo)**
+](https://streamable.com/79bwk6)
 
 🧭 Como rodar o projeto
 
